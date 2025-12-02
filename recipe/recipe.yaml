@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: segment-analytics-python
-  version: 2.3.4
+  version: "2.3.5"
 
 package:
   name: ${{ name|lower }}
@@ -10,10 +10,10 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/segment_analytics_python-${{ version }}.tar.gz
-  sha256: f188e864cc0fed9fb141aff73c21bfaab783a1dd1b97ab1eff44340aed68f50b
+  sha256: eedaf6290e95025adf11cb73769dac662370ca2187fecdc6c66ddd96c508255a
 
 build:
-  number: 1
+  number: 0
   noarch: python
   script: ${{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
 
