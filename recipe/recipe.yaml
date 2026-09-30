@@ -22,7 +22,6 @@ requirements:
     - python ${{ python_min }}.*
     - pip
     - hatchling
-    - setuptools
   run:
     - python >=${{ python_min }}
     - requests >=2.7,<3
